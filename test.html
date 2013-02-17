@@ -7,21 +7,41 @@
 	<script type="text/javascript">
 		function testfunc()
 		{
-			var x1 = parseInt(document.getElementById("x1").value);
-                        var x2 = parseInt(document.getElementById("x2").value);
-                        var t1 = parseInt(document.getElementById("t1").value);
-                        var t2 = parseInt(document.getElementById("t2").value);
-			alert('Velcity is '+velocity(x1,x2,t1,t2));
+			var x = parseInt(document.getElementById("x").value);
+			var y = parseInt(document.getElementById("y").value);
+			var z = parseInt(document.getElementById("z").value);
+			var vx = parseInt(document.getElementById("vx").value);
+			var vy = parseInt(document.getElementById("vy").value);
+			var vz = parseInt(document.getElementById("vz").value);
+			var ax = parseInt(document.getElementById("ax").value);
+			var ay = parseInt(document.getElementById("ay").value);
+			var az = parseInt(document.getElementById("az").value);
+
+			var position1 = new Position(x,y,z);
+			var velocity1 = new Velocity(vx,vy,vz);
+			var acceleration1 = new Acceleration(ax,ay,az);
+
+			var particle1 = new Particle(position1,velocity1,acceleration1);
+			alert(particle1.infoString());
 		}
 	</script>
 
 </head>
 <body>
 <h1>Test for Simphics</h1>
-x1:<input type="text" id="x1" value="0" /><br />
-x2:<input type="text" id="x2" value="10" /><br />
-t1:<input type="text" id="t1" value="0" /><br />
-t2:<input type="text" id="t2" value="20" /><br />
-<button onclick="testfunc()">Click to Calculate Velocity</button>
+Position of Particle:
+	<input type="text" id="x" value="10" />
+	<input type="text" id="y" value="0" />
+	<input type="text" id="z" value="0" /><br />
+Velocity of Particle:
+	<input type="text" id="vx" value="10" />
+	<input type="text" id="vy" value="0" />
+	<input type="text" id="vz" value="0" /><br />
+Acceleration of Particle:
+	<input type="text" id="ax" value="10" />
+	<input type="text" id="ay" value="0" />
+	<input type="text" id="az" value="0" /><br />
+
+<button onclick="testfunc()">Click to Show Particle Details</button>
 </body>
 </html>
