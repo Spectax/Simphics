@@ -1,14 +1,34 @@
 Simphics
 ========
 
-*A Simple JavaScript Physics Library*
+*A Simple JavaScript Game Engine*
 
-Current Version: 0.1
+Current Version: 0.2
 
 ##Description
-Simphics is a simple physics library written for fun as a hobby.
+Simphics is a Game Engine written in Javascript written for fun as a hobby.
 You may use it as you wish under the MIT license (Open Source).
 
+##Modules
+The following modules are under development
+###Single Player Game Engine - To run in a Web Browser
+###Multiplayer Game Engine - To run on NodeJS
+###Physics Engine
+###Math Engine
+
+##Miscellaneous Information
+
+Simphics ideally should simplify stuff.
+
+The simphics single player game engine should be able to replicate many of the standard game engine features such as game loop and game state.
+Being written in javascript it should be able to run in a browser, and using HTML and CSS, games should be easy to design.
+
+There will be a generic simphics_game.js that will contain the main game engine logic.
+Then the simphics_single_web.js would wrap around that, to execute in the web.
+
+There will be simphics_multiplayer_client.js and simphics_multiplayer_server.js for multiplayer capability using node.js as the server
+
+simphics_physics.js and simphics_math.js are generic, but tailored to integrate well into the simphics game engine
 
 ##License
 
