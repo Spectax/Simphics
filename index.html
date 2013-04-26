@@ -1,43 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Simphics by tsjamm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <title>Simphics by Spectax</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
+    <header>
+      <div class="inner">
         <h1>Simphics</h1>
-        <p>Under Development...</p>
+        <h2>Under Development...</h2>
+        <a href="https://github.com/Spectax/Simphics" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-        <p class="view"><a href="https://github.com/tsjamm/Simphics">View the Project on GitHub <small>tsjamm/Simphics</small></a></p>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>Simphics</h1>
 
+<p><em>A Simple JavaScript Game Engine</em></p>
 
-        <ul>
-          <li><a href="https://github.com/tsjamm/Simphics/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/tsjamm/Simphics/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/tsjamm/Simphics">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>Simphics</h1>
-
-<p><em>A Simple JavaScript Physics Library</em></p>
-
-<p>Current Version: 0.1</p>
+<p>Current Version: 0.2</p>
 
 <h2>Description</h2>
 
-<p>Simphics is a simple physics library written for fun as a hobby.
+<p>Simphics is a Game Engine written in Javascript written for fun as a hobby.
 You may use it as you wish under the MIT license (Open Source).</p>
+
+<h2>Modules</h2>
+
+<p>The following modules are under development</p>
+
+<h3>Single Player Game Engine - To run in a Web Browser</h3>
+
+<h3>Multiplayer Game Engine - To run on NodeJS</h3>
+
+<h3>Physics Engine</h3>
+
+<h3>Math Engine</h3>
+
+<h2>Miscellaneous Information</h2>
+
+<p>Simphics ideally should simplify stuff.</p>
+
+<p>The simphics single player game engine should be able to replicate many of the standard game engine features such as game loop and game state.
+Being written in javascript it should be able to run in a browser, and using HTML and CSS, games should be easy to design.</p>
+
+<p>There will be a generic simphics_game.js that will contain the main game engine logic.
+Then the simphics_single_web.js would wrap around that, to execute in the web.</p>
+
+<p>There will be simphics_multiplayer_client.js and simphics_multiplayer_server.js for multiplayer capability using node.js as the server</p>
+
+<p>simphics_physics.js and simphics_math.js are generic, but tailored to integrate well into the simphics game engine</p>
 
 <h2>License</h2>
 
@@ -48,13 +74,25 @@ You may use it as you wish under the MIT license (Open Source).</p>
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 
 <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/tsjamm">tsjamm</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/Spectax/Simphics/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Spectax/Simphics/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Spectax/Simphics"></a> is maintained by <a href="https://github.com/Spectax">Spectax</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+  
   </body>
 </html>
