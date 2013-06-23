@@ -4,14 +4,14 @@
 
 //This function gets invoked the first time the application is run
 //It executes only once
-var initGame = function()
+function initGame()
 {
 
 }
 
 //This function gets invoked each time the game is started within the application
 //It executes each time the user starts the game
-var startGame = function()
+function startGame()
 {
 	//Starting the GameLoop
 	gameLoop();
@@ -21,7 +21,7 @@ var startGame = function()
 //This function contains the actual game loop logic, and invokes the background functions
 //The loop continues to run after being invoked by startGame
 //The loop runs until stopGame is invoked by settin toStop = true within the loop
-var gameLoop = function()
+function gameLoop()
 {
 	var toStop = false;
 	
@@ -35,7 +35,7 @@ var gameLoop = function()
 }
 
 //This function gets invoked when the running game completes, or is stopped by the user
-var stopGame = function(toStop)
+function stopGame(toStop)
 {
 	//toStop is a boolean value, when true, the game is stopped and logic is executed
 	if(toStop) 
@@ -46,7 +46,16 @@ var stopGame = function(toStop)
 }
 
 //This function gets invoked when the application is about to exit
-var exitGame = function()
+function exitGame()
 {
 
+}
+
+if(exports !=undefined)
+{
+exports.initGame = initGame;
+exports.startGame = startGame;
+exports.gameLoop = gameLoop;
+exports.stopGame = stopGame;
+exports.exitGame = exitGame;
 }
